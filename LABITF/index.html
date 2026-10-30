@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FoodPicker – วันนี้กินอะไรดี?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@400;500;600&family=Sarabun:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="#" class="logo"><span class="logo-icon">🍽️</span> FoodPicker</a>
+    <ul class="nav-links">
+      <li><a href="#picker" class="active">สุ่มเมนู</a></li>
+      <li><a href="#menu">เมนูทั้งหมด</a></li>
+      <li><a href="#about">เกี่ยวกับ</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero + Random Section -->
+  <header class="hero" id="picker">
+    <p class="eyebrow">หิวแล้วแต่คิดไม่ออก?</p>
+    <h1>วันนี้<span class="highlight">กินอะไรดี</span>?</h1>
+    <p class="subtitle">กดปุ่มด้านล่าง แล้วให้ FoodPicker เลือกเมนูให้คุณเอง</p>
+
+    <article class="food-card" id="foodCard">
+      <div class="food-image-wrap">
+        <img id="foodImage" src="images/kaprao.svg" alt="กะเพราหมูสับไข่ดาว">
+        <span class="food-tag" id="foodTag">จานเดียว</span>
+      </div>
+      <div class="food-info">
+        <h2 id="foodName">กะเพราหมูสับไข่ดาว</h2>
+        <p id="foodDesc">เมนูสิ้นคิดอันดับหนึ่งของคนไทย ผัดหมูสับกับใบกะเพราและพริกสดจนหอมฉุย เสิร์ฟพร้อมข้าวสวยร้อนๆ และไข่ดาวกรอบๆ</p>
+        <div class="food-footer">
+          <span class="price"><span id="foodPrice">60</span> บาท</span>
+          <span class="counter">สุ่มไปแล้ว <b id="rollCount">0</b> ครั้ง</span>
+        </div>
+      </div>
+    </article>
+
+    <button class="btn-random" id="randomBtn">
+      <span class="btn-icon">🎲</span> สุ่มเมนูเลย!
+    </button>
+  </header>
+
+  <!-- All Menu -->
+  <section class="menu-section" id="menu">
+    <h2 class="section-title">เมนูทั้งหมดในวงล้อ</h2>
+    <p class="section-sub">คลิกที่เมนูเพื่อดูรายละเอียดด้านบนได้เลย</p>
+    <div class="menu-grid" id="menuGrid"></div>
+  </section>
+
+  <!-- About / Footer -->
+  <footer class="footer" id="about">
+    <p><b>FoodPicker</b> · เว็บสุ่มเมนูอาหาร สำหรับใบงานสัปดาห์ที่ 15 Basic Deployment</p>
+    <p class="small">Information Technology Fundamentals 1/2026 · สร้างด้วย HTML, CSS และ JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
